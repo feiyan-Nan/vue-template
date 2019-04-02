@@ -1,0 +1,31 @@
+.bounceIn{
+  animation-duration: .1s;
+  animation-name: bounceIn;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes bounceIn {
+  from {
+    opacity: 0;
+    transform: scale(0.7,0.7,0.7);
+  }
+  to{
+    opacity: 1;
+    transform: scale(1,1,1);
+  }
+}
+
+.animate__circle {
+  animation-duration: 1s;
+  animation-name: circle;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes circle {
+  from { 
+    transform: rotate(0);
+  }
+  to{ 
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,140 @@
+
+$theme-color: #ED6C00;
+$dangerous-color: #F72B44;
+$theme-color-light: #FA8919;
+$theme-color-lighter: #FDBA78;
+$bg-calendar-task:#fbe2cc;
+$color-black:#000000;
+$dangerous-color-light: #fbe9e7;
+
+$color-fresh: #07cfda;
+$color-fresh-light: #1d8091;
+$color-fresh-regular:#5bbdce;
+
+//文本色
+$color-text-primary: #4A4A4A;
+$color-text-regular:#666666;
+$color-text-light:#737373;
+$color-text-secondary:#999999;
+$color-text-placeholder: #a9a9a9;
+$color-text-almost-black: #212121;
+$color-text-purple-grey: #8590a6;
+//边框色
+$color-bd-base: #bfbfbf;
+$color-bd-light: #cdc9c5;
+$color-bd-lighter:#adadad;
+$color-bd-regular: #d8d8d8;
+$color-bd-extra-light: #ededed;
+$color-bd-title: #ebebeb;
+$color-bd-input: #f0f0f0;
+
+// 背景色
+$color-bg-normal:  #3d3d3d;
+$color-bg-base:  #f3f3f3;
+$color-bg-light: #f8f8f8;
+$color-bg-lighter: #fcfcfb;
+$color-white:#ffffff;
+$color-warning: #fffbc4;
+
+// 图标色
+$color-icon-success: #70b839;
+$color-icon-light: #dddddd;
+
+%f-mini{
+    font-size: 10px;
+}
+%f-extra-small { // 12px
+    font-size: 0.75rem;
+}
+%f-small { // 14px;
+    font-size: 0.875rem;
+}
+%f-normal { // 16px
+    font-size: 1rem;
+}
+%f-giant {
+    font-size: 18px;
+}
+%f-subtitle {
+    font-size: 24px;
+}
+%f-title {
+    font-size: 26px;
+}
+%f-light {
+    font-weight: 300;
+}
+%f-weight-normal {
+    font-weight: 400;
+}
+%f-half {
+    font-weight: 500;
+}
+%f-heavy {
+    font-weight: 600;
+}
+
+
+
+%color-text-primary {
+    color: $color-text-primary;
+}
+%color-text-secondary {
+    color: $color-text-secondary;
+}
+%color-theme {
+    color: $theme-color;
+}
+%color-theme-light {
+    color: $theme-color-lighter;
+}
+%color-warning {
+    color: $dangerous-color;
+}
+%color-bd-light {
+    color: $color-bd-light;
+}
+%color-text-secondary {
+    color: $color-text-secondary;
+}
+
+%color-attachment {
+    color: $color-fresh;
+}
+
+%border-color {
+    border-color: $color-text-secondary;
+}
+%border-color-fresh {
+    border-color: $color-fresh;
+}
+%color-calendar-hour {
+	color: $color-text-secondary
+}
+%color-font-light {
+	color: $color-text-secondary;
+}
+%color-gray-light {
+	color: $color-bd-base;
+}
+%bg-white-light {
+    background-color: $color-bg-lighter;
+}
+%bg-gray-normal {
+    background-color: $color-bd-extra-light;
+}
+%bg-gray-light {
+    background-color: $color-bg-base;
+}
+%bg-pre-white {
+    background-color: $color-white;
+}
+%bg-calendar-task {
+    background-color: $bg-calendar-task;
+}
+%color-font-purple-grey {
+  color: $color-text-purple-grey;
+}
+%color-font-almost-black {
+  color: $color-text-almost-black;
+}

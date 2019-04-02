@@ -1,0 +1,64 @@
+@mixin flex ($direction: row, $justify-content: flex-start, $align-items: flex-start,$flex-wrap: nowrap) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify-content;
+	align-items: $align-items;
+	flex-wrap: $flex-wrap;
+}
+// 修改背景色等
+@mixin background($border-radius:5px, $bg-color:$color-black, $color:$color-white, $font-weight:400){
+    border-radius: $border-radius;
+    background-color: $bg-color;
+    color: $color;
+    @extend %f-weight-normal
+}
+// 文本居中
+@mixin center($height:100%){
+    height: $height;
+    line-height: $height;
+    text-align: center
+}
+// 多行文本溢出...
+@mixin multiEllipsis($line:2){
+    overflow : hidden;
+    word-break: break-all;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: $line;
+    -webkit-box-orient: vertical;
+}
+
+//鼠标hover显示下划线
+@mixin hoverLine($height:2px,$color:$color-text-primary){
+    position: relative;
+    &:hover::after{
+            content: '';
+            position: absolute;
+            height:$height;
+            width: 100%;
+            background-color: $color;
+            bottom: 0;
+            left: 0;
+        
+    }
+}
+
+
+
+@mixin ib__status-selector ($width:'6.25rem') {
+    @include flex(column);
+    @extend %f-extra-small;
+    color: $color-white;
+    width: $width;
+    .ib__status-selector-item{
+        @include flex(row,flex-start,center);
+        padding: 0 0.625rem;
+        height: 2.25rem;
+        box-sizing: border-box;
+        width: 100%;
+        transition: all .2s;
+        &:hover{
+            background-color: $color-black;
+        }
+    }
+  }

@@ -1,0 +1,86 @@
+// reset
+body {
+    margin: 0;
+    font-size: 16px;
+    font-family: PingFangSC, Helvetica, Arial, sans-serif;
+}
+// 图标字体抗锯齿
+.ibass {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+h1, h2, h3, h4, h5, h6, div, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+i, em {
+    font-style: normal;
+}
+b, strong {
+    font-weight: normal;
+}
+input {
+    border-width: 0;
+    border-style: none;
+    outline: none;
+}
+.pointer {
+    cursor: pointer;
+}
+// // ibass
+// [class*=ibass] {
+//     @extend %f-normal;
+//     @extend %color-gray;
+//     &[class*=active] {
+//         @extend %color-theme;
+//     }
+// }
+// 项目模板的全局颜色
+$project-type-colors: #FF5469 #4FBE6D #67AAF6 #FA8919;
+
+@for $i from 1 through 4 {
+    .ibass-project-type#{$i} {
+        color: nth($project-type-colors, $i);
+    }
+}
+
+.se--blur {
+    filter: blur(5px);
+}
+
+.ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+.ibass--default{
+    color: $color-text-primary;
+    transition: color .5s;
+    cursor: pointer;
+    &:hover {
+        color: $theme-color;
+    }
+}
+.ibass-close{
+    cursor:pointer;
+    &:hover{
+        color:$theme-color
+    }
+}
+
+.toast-box {
+    position: fixed;
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.noselect{
+  user-select: none;
+}
+//tag release
