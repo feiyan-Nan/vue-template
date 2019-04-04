@@ -3,12 +3,13 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-import plugin from '@/plugin'
-// import '@/mixins'
+// moment的中文语言包
 import 'moment/locale/zh-cn'
-console.log(plugin)
-Vue.config.productionTip = false
+import plugin from '@/plugin'
+import '@/mixins'
 
+Vue.config.productionTip = false
+Vue.use(plugin)
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

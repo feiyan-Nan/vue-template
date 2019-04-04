@@ -22,7 +22,8 @@ export default {
     }
   },
   mounted () {
-    console.log(moment)
+    console.log(this.$store.state)
+    console.log(moment().format('dddd'))
   },
   methods: {
     handleClose () {

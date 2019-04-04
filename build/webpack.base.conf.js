@@ -90,7 +90,7 @@ module.exports = {
     tls: 'empty',
     child_process: 'empty'
   },
-  plugins:[
+  plugins: [
     new webpack.ProvidePlugin({
       '_': 'lodash',
       'moment': 'moment'
