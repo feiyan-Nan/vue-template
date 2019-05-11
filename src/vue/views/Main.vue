@@ -1,5 +1,6 @@
 <template>
   <div class="main" v-clickoutside:success="handleClose" >
+    1231
     <button @click="show= !show"> {{msg}}</button>
     <div class="dropdown" v-show="show" >
     <p>下拉框的内容， 点击外面区域可以关闭</p>

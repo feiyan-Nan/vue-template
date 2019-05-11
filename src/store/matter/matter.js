@@ -8,12 +8,13 @@ const matterStore = {
     // 判读是真实的数据(realData)，还是搜索状态克隆的数据(searchData)
     SearchOrRealData: 'realData',
     // 当前项目的信息
-    curMatter: ''
+    curMatter: '',
+    msg: '李贵功'
   },
   mutations: {
     // 判断是否从新查询数据
     updateTasksList (state, status) {
-      state.isUpdateTaskLists = status
+      state.msg = status
     },
     // 更新这个标示我在“我的” 还是“项目”
     updateMark (state, mark) {
