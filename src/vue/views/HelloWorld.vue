@@ -1,10 +1,6 @@
 <template>
   <div class="main" v-clickoutside:success="handleClose" >
-<<<<<<< HEAD
     <button @click="show = !show" class="pointer"> 点击显示下拉菜单</button>
-=======
-    <button @click="show= !show"> {{msg}}</button>
->>>>>>> ad51c9506ada6272eaad7beba404d3246abce0f9
     <div class="dropdown" v-show="show" >
     <p @click="ceToast">下拉框的内容， 点击外面区域可以关闭</p>
     </div>
