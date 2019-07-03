@@ -1,9 +1,10 @@
 <template>
   <div class="main" v-clickoutside:success="handleClose" >
-    <button @click="show= !show"> 点击显示下拉菜单</button>
+    <button @click="show = !show" class="pointer"> 点击显示下拉菜单</button>
     <div class="dropdown" v-show="show" >
-    <p>下拉框的内容， 点击外面区域可以关闭</p>
+    <p @click="ceToast">下拉框的内容， 点击外面区域可以关闭</p>
     </div>
+    <input type="text">
   </div>
 </template>
 
@@ -22,12 +23,18 @@ export default {
     }
   },
   mounted () {
+    console.log(this.$Toast.success('成功了'))
+    console.log([...new Set([...this.$el.querySelectorAll('*')].map(v => v.tagName))])
     console.log(this.$store.state)
     console.log(moment().format('dddd'))
   },
   methods: {
     handleClose () {
       this.show = false
+    },
+    ceToast () {
+      this.$Toast.info('132', 3000)
+      console.log(123456)
     }
   }
 }

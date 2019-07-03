@@ -6,6 +6,7 @@ import router from './router'
 // moment的中文语言包
 import 'moment/locale/zh-cn'
 import plugin from '@/plugin'
+import '@/fonts/icon-bass.css'
 import '@/mixins'
 
 Vue.config.productionTip = false

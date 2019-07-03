@@ -65,7 +65,8 @@ exports.cssLoaders = function (options) {
       options: {
         resources: [
           path.resolve(__dirname, '../src/styles/mixin.scss'),
-          path.resolve(__dirname, '../src/styles/atoms.scss')
+          path.resolve(__dirname, '../src/styles/atoms.scss'),
+          path.resolve(__dirname, '../src/styles/global.scss')
         ]
       }
     }),

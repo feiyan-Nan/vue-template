@@ -10,9 +10,15 @@ export default {
 </script>
 
 <style lang="scss">
-@import './styles/global.scss';
 @import './styles/animation.scss';
 @import './styles/transition.scss';
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+  -webkit-tap-highlight-color: transparent;
+}
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
