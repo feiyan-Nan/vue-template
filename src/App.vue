@@ -1,6 +1,7 @@
 <template lang="pug">
   #app
-    router-view
+    .container
+      router-view
 </template>
 
 <script>
@@ -20,11 +21,16 @@ export default {
   -webkit-tap-highlight-color: transparent;
 }
 #app {
+  background: #f8f8f8;
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  .container {
+    width: 1000px;
+    margin: 0 auto;
+    background: rgb(171, 216, 218);
+  }
 }
 </style>
