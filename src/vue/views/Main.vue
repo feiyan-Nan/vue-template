@@ -24,6 +24,13 @@ export default {
     }
   },
   mounted () {
+    let a = 123
+    let b = 456
+    if (a === b) {
+      console.log(a)
+    }
+    this.$Toast.info('成功')
+    this.$Toast.error('失败')
     // console.log(this.$store.state.matter.msg, 123)
     console.log(moment().format('dddd'))
   },

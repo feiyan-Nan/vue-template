@@ -24,7 +24,7 @@ export default {
     }
   },
   mounted () {
-    console.log(this.$Toast.success('成功了'))
+    this.$Toast.success('成功了', 1000)
     console.log([...new Set([...this.$el.querySelectorAll('*')].map(v => v.tagName))])
     console.log(this.$store.state)
     // console.log(this.$store.state.matter.msg, 123)
