@@ -54,6 +54,11 @@ vue实例上挂载有db(操作本地存储)
 ### 全局的Toast提示
 使用方式: 提供了
 1. `this.$Toast.success('信息')`
-1. `this.$Toast.error('信息')`
-1. `this.$Toast.warn('信息')`
-1. `this.$Toast.info('信息')`
+2. `this.$Toast.error('信息')`
+3. `this.$Toast.warn('信息')`
+4. `this.$Toast.info('信息')`
+
+
+### 添加了git commit 以及 git push时代码的eslint的格式检测
+严格安装eslint中的规范进行代码的管理, 请不要随意的删减eslint的规范
+
